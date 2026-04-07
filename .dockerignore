@@ -1,17 +1,18 @@
 # Virtual environments
-myenv/
-.venv/
 venv/
 env/
+myenv/
+.venv/
 
-# Cache and compiled files
+# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
 
-# IDE and editors
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -27,9 +28,10 @@ faiss_store/
 .streamlit/cache/
 .streamlit/logs/
 
-# Environment variables
+# Git
+.git
+.gitignore
+
+# Environment
 .env
 .env.local
-
-# Logs
-*.log
