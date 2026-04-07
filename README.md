@@ -205,9 +205,35 @@ topK=20
 - **Context**: ~200K tokens
 - **Output**: Up to 300 tokens per response
 
-## Deployment
+## 🚀 Deployment Status
 
-### Streamlit Cloud (Recommended)
+### ✅ Successfully Deployed on AWS EC2
+
+**Live Demo**: [Access the deployed chatbot](http://your-ec2-public-ip)
+
+**Deployment Details**:
+- **Platform**: AWS EC2 (t2.micro/t2.small)
+- **OS**: Ubuntu 24.04 LTS
+- **Runtime**: Python 3.13 + Streamlit
+- **Vector Store**: FAISS
+- **Models**: Amazon Titan Embed Text v2 + Nova Pro
+- **Status**: ✅ Production Ready
+
+**Quick Access**:
+```bash
+# SSH into your EC2 instance
+ssh -i your-key.pem ubuntu@your-public-ip
+
+# Check app status
+sudo systemctl status airline-rag
+
+# View logs
+sudo journalctl -u airline-rag -f
+```
+
+### Deployment Options
+
+Choose your preferred deployment method:
 
 1. Push code to GitHub
 2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
