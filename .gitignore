@@ -1,0 +1,34 @@
+# Virtual environments
+myenv/
+.venv/
+venv/
+env/
+
+# Cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific
+chroma_vectorstore/
+faiss_store/
+.streamlit/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
